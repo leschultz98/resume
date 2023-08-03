@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LE_HONG_PHUC_FRONT-END_DEVELOPER</title>
+  <title>LE_HONG_PHUC_FULL_STACK_DEVELOPER</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&family=Raleway:wght@700&display=swap');
 
@@ -102,7 +102,7 @@
       margin-top: 0.5rem;
     }
 
-    .time {
+    .complex {
       margin-bottom: 0.5rem;
       display: flex;
       padding: 0.25rem 0;
@@ -110,14 +110,32 @@
       font-size: 1.125rem;
     }
 
-    .time>:first-child {
-      margin-right: 0.75rem;
-      padding-right: 0.75rem;
-      border-right: 1px solid black;
+    .complex>:not(:first-child) {
+      margin-left: 0.75rem;
+      padding-left: 0.75rem;
+      border-left: 1px solid #312c30;
     }
 
     ul {
       padding-inline-start: 25px;
+    }
+
+    footer {
+      position: fixed;
+      right: 2.5rem;
+      bottom: 0;
+      display: flex;
+      gap: 0.5rem;
+      font-size: 1rem !important;
+    }
+
+    footer>* {
+      color: #7B7D7D;
+    }
+
+    footer>:first-child {
+      font-weight: bold;
+      letter-spacing: 1px;
     }
   </style>
 </head>
@@ -136,7 +154,7 @@
 
     <div class="profile">
       <div class="summary">
-        Proficient Full Stack Developer with 3+ years of solid experience in Frontend Development, Backend Development
+        Proficient Full Stack Developer with 3 years of solid experience in Frontend Development, Backend Development
         areas with a willingness to learn and master Microservices & containerization and DevOps & CI/CD. Passionate
         about optimizing performance and delivering innovative solutions that drive business growth.
       </div>
@@ -193,7 +211,7 @@
     <h1>WORK EXPERIENCE</h1>
 
     <h2>Full Stack Developer</h2>
-    <div class="time">
+    <div class="complex">
       <div>S3 Corp</div>
       <div>2022 - current</div>
     </div>
@@ -207,7 +225,8 @@
       <li>Implemented secure authentication and authorization solutions, ensuring the protection of sensitive customer
         data and reducing the risk of security breaches by 40%.
       </li>
-      <li>Wrote unit and integration tests for a Golang application, improving overall code quality by 25% and
+      <li style="margin-top: 0;">Wrote unit and integration tests for a Golang application, improving overall code
+        quality by 25% and
         reducing the number of bugs by 30%.</li>
       <li>Participated in code reviews of other engineers’ work and ensured that all code adheres to the company’s
         coding standards & guidelines.</li>
@@ -227,7 +246,7 @@
     </div>
 
     <h2>Frontend Developer</h2>
-    <div class="time">
+    <div class="complex">
       <div>Ban Vien</div>
       <div>2021 - 2022</div>
     </div>
@@ -254,7 +273,7 @@
   <section>
     <h1>EDUCATION</h1>
 
-    <div class="time">
+    <div class="complex">
       <h2>University of Economics Ho Chi Minh City</h2>
       <div>2016 - 2020</div>
     </div>
@@ -262,6 +281,11 @@
     <div>Finance Student.</div>
   </section>
 
+  <footer>
+    <div>Le Hong Phuc,</div>
+    <a href="tel:0835527319">0835 527 319,</a>
+    <a href="mailto:leschultz98@outlook.com.vn">leschultz98@outlook.com.vn</a>
+  </footer>
 </body>
 
 </html>
