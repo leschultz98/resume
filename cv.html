@@ -1,291 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LE_HONG_PHUC_FULL_STACK_DEVELOPER</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&family=Raleway:wght@700&display=swap');
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LE_HONG_PHUC_FULL_STACK_DEVELOPER</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&family=Raleway:wght@700&display=swap');
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
 
-    * {
-      margin: 0;
-      box-sizing: border-box;
-    }
+      a {
+        color: #312c30;
+        text-decoration: none !important;
+      }
 
-    a {
-      color: #312c30;
-      text-decoration: none !important;
-    }
+      body {
+        padding: 0 2.5rem;
+        font-family: 'Lato', sans-serif;
+        line-height: 1.75;
+        color: #312c30;
+      }
 
-    body {
-      padding: 0 2.5rem;
-      font-family: 'Lato', sans-serif;
-      line-height: 1.75;
-      color: #312c30;
-    }
+      header {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+      }
 
-    header {
-      display: flex;
-      align-items: center;
-      gap: 4rem;
-    }
+      .info {
+        flex: 1;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid gray;
+      }
 
-    .info {
-      flex: 1;
-      padding-bottom: 1rem;
-      border-bottom: 2px solid gray;
-    }
+      .name {
+        font-family: 'Playfair Display', serif;
+        font-size: 3rem;
+        letter-spacing: 4px;
+      }
 
+      .title {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.25rem;
+        letter-spacing: 4px;
+      }
 
-    .name {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      letter-spacing: 4px;
-    }
+      img {
+        width: 175px;
+        height: 175px;
+        border-radius: 50%;
+      }
 
-    .title {
-      font-family: 'Raleway', sans-serif;
-      font-size: 1.25rem;
-      letter-spacing: 4px;
-    }
+      section {
+        margin-top: 1.25rem;
+      }
 
-    img {
-      width: 175px;
-      height: 175px;
-      border-radius: 50%;
-    }
+      h1 {
+        margin-bottom: 0.75rem;
+        padding-left: 1rem;
+        background-color: #e0e0e0;
+        font-size: 1.25rem;
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 4px;
+      }
 
-    section {
-      margin-top: 1.25rem;
-    }
+      .profile {
+        display: flex;
+        gap: 3rem;
+      }
 
-    h1 {
-      margin-bottom: 0.5rem;
-      padding-left: 1rem;
-      background-color: #E0E0E0;
-      font-size: 1.25rem;
-      font-family: 'Raleway', sans-serif;
-      letter-spacing: 4px;
-    }
+      .summary {
+        flex: 1;
+      }
 
-    .profile {
-      display: flex;
-      gap: 3rem;
-    }
+      .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: right;
+      }
 
-    .summary {
-      flex: 1;
-    }
+      .skills {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+      }
 
-    .contact {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: right;
-    }
+      h2 {
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 1px;
+        font-size: 1.125rem;
+      }
 
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 2rem;
-    }
+      h2:not(:first-of-type) {
+        margin-top: 0.75rem;
+      }
 
-    h2 {
-      font-family: 'Raleway', sans-serif;
-      letter-spacing: 1px;
-      font-size: 1.125rem;
-    }
+      .complex {
+        margin-bottom: 0.5rem;
+        display: flex;
+        padding: 0.25rem 0;
+        line-height: 1;
+        font-size: 1.125rem;
+      }
 
-    h2:not(:first-of-type) {
-      margin-top: 0.5rem;
-    }
+      .complex > :not(:first-child) {
+        margin-left: 0.75rem;
+        padding-left: 0.75rem;
+        border-left: 1px solid #312c30;
+      }
 
-    .complex {
-      margin-bottom: 0.5rem;
-      display: flex;
-      padding: 0.25rem 0;
-      line-height: 1;
-      font-size: 1.125rem;
-    }
+      ul {
+        padding-inline-start: 25px;
+      }
 
-    .complex>:not(:first-child) {
-      margin-left: 0.75rem;
-      padding-left: 0.75rem;
-      border-left: 1px solid #312c30;
-    }
+      footer {
+        position: fixed;
+        right: 2.5rem;
+        bottom: 0;
+        display: flex;
+        gap: 0.5rem;
+        font-size: 1rem !important;
+      }
 
-    ul {
-      padding-inline-start: 25px;
-    }
+      footer > * {
+        color: #7b7d7d;
+      }
 
-    footer {
-      position: fixed;
-      right: 2.5rem;
-      bottom: 0;
-      display: flex;
-      gap: 0.5rem;
-      font-size: 1rem !important;
-    }
+      footer > :first-child {
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+    </style>
+  </head>
 
-    footer>* {
-      color: #7B7D7D;
-    }
-
-    footer>:first-child {
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <div class="info">
-      <div class="name">LE HONG PHUC</div>
-      <div class="title">FULL STACK DEVELOPER</div>
-    </div>
-    <img src="./me.jpg" alt="" />
-  </header>
-
-  <section>
-    <h1>PROFILE</h1>
-
-    <div class="profile">
-      <div class="summary">
-        Proficient Full Stack Developer with 3 years of solid experience in Frontend Development, Backend Development
-        areas with a willingness to learn and master Microservices & containerization and DevOps & CI/CD. Passionate
-        about optimizing performance and delivering innovative solutions that drive business growth.
+  <body>
+    <header>
+      <div class="info">
+        <div class="name">LE HONG PHUC</div>
+        <div class="title">FULL STACK DEVELOPER</div>
       </div>
-      <div class="contact">
-        <a href="tel:0835527319">0835 527 319</a>
-        <a href="https://github.com/leschultz98">github.com/leschultz98</a>
-        <a href="https://www.linkedin.com/in/leschultz98">linkedin.com/in/leschultz98</a>
-        <a href="mailto:leschultz98@outlook.com.vn">leschultz98@outlook.com.vn</a>
+      <img src="./me.jpg" alt="" />
+    </header>
+
+    <section>
+      <h1>PROFILE</h1>
+
+      <div class="profile">
+        <div class="summary">
+          Proficient Full Stack Developer with 3 years of solid experience in Frontend Development, Backend Development areas with a willingness to learn and master Microservices and DevOps.
+          Passionate about optimizing performance and delivering innovative solutions that drive business growth.
+        </div>
+        <div class="contact">
+          <a href="tel:0835527319">0835 527 319</a>
+          <a href="https://github.com/leschultz98">github.com/leschultz98</a>
+          <a href="https://www.linkedin.com/in/leschultz98">linkedin.com/in/leschultz98</a>
+          <a href="mailto:leschultz98@outlook.com.vn">leschultz98@outlook.com.vn</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <h1>KEY SKILLS</h1>
+    <section>
+      <h1>KEY SKILLS</h1>
 
-    <div class="skills">
-      <div>
-        <h2>Frontend</h2>
-        <ul>
-          <li>TypeScript, ES6/ES2015, HTML5, CSS3</li>
-          <li>Sass, JSON, YAML, RESTful API</li>
-          <li>ReactJS, Angular 2+, SvelteJS, Electron</li>
-          <li>Redux, RxJS, Socket.io, Bootstrap, jQuery</li>
-          <li>ViteJS, webpack</li>
-        </ul>
+      <div class="skills">
+        <div>
+          <h2>Frontend</h2>
+          <ul>
+            <li>TypeScript, ES6/ES2015, HTML5, CSS3</li>
+            <li>Sass, JSON, YAML, RESTful API</li>
+            <li>ReactJS, Angular 2+, SvelteJS, Electron</li>
+            <li>Redux, RxJS, Socket.io, Bootstrap, jQuery</li>
+            <li>ViteJS, webpack</li>
+          </ul>
 
-        <h2>DevOps</h2>
-        <ul>
-          <li>Git, GitLab</li>
-          <li>Docker, Kubernetes</li>
-        </ul>
+          <h2>DevOps</h2>
+          <ul>
+            <li>Git, GitLab</li>
+            <li>Docker, Kubernetes</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Backend</h2>
+          <ul>
+            <li>Golang, GoLand</li>
+            <li>Node.js, Express.js, NestJS</li>
+            <li>Microservices, Consul, gRPC, Apache Kafka</li>
+          </ul>
+
+          <h2>Databases</h2>
+          <ul>
+            <li>CRUD, ORM</li>
+            <li>SQL, MySQL, PostgreSQL</li>
+            <li>NoSQL, MongoDB</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1>WORK EXPERIENCE</h1>
+
+      <h2>Full Stack Developer</h2>
+      <div class="complex">
+        <div>S3 Corp</div>
+        <div>2022 - current</div>
       </div>
 
-      <div>
-        <h2>Backend</h2>
-        <ul>
-          <li>Golang, GoLand</li>
-          <li>Node.js, Express.js, NestJS</li>
-          <li>Microservices, Consul, gRPC, Apache Kafka</li>
-          <li>Security and Authentication</li>
-        </ul>
+      <ul>
+        <li>Developed and maintained a scalable microservices architecture that improved the overall speed and reliability of the web application.</li>
+        <li>Developed and maintained RESTful APIs, enabling seamless communication between web applications and third-party services.</li>
+        <li>Implemented secure authentication and authorization solutions, ensuring the protection of sensitive customer data and reducing the risk of security breaches.</li>
+        <li style="margin-top: 1rem">Developed and maintained user interfaces using React.js and utilized Redux for state management.</li>
+        <li>Wrote unit and integration tests for a Golang application, improving overall code qualityand reducing the number of bugs.</li>
+        <li>Participated in code reviews of other engineers’ work and ensured that all code adheres to the company’s coding standards & guidelines.</li>
+        <li>Created self-contained, reusable, and testable modules and components, resulting in reduced development time and increased team productivity.</li>
+        <li>Utilized effective debugging tools to indentify areas of performance issues, resulting in improvement of client-side scripts.</li>
+        <li>Collaborated with product managers and designers to create a comprehensive user interface style guide, resulting in reduced development time for new features and components.</li>
+      </ul>
 
-        <h2>Databases</h2>
-        <ul>
-          <li>CRUD, ORM</li>
-          <li>SQL, MySQL, PostgreSQL</li>
-          <li>NoSQL, MongoDB</li>
-        </ul>
+      <h2>Frontend Developer</h2>
+      <div class="complex">
+        <div>Ban Vien</div>
+        <div>2021 - 2022</div>
       </div>
-    </div>
-  </section>
 
-  <section>
-    <h1>WORK EXPERIENCE</h1>
+      <ul>
+        <li>Developed complex user interfaces with HTML, CSS, JavaScript, React, and Angular and ensured a user-friendly experience.</li>
+        <li>Reduced repeat work by establishing a coding style and its implementation, resulting in increased developer performance.</li>
+        <li>Optimized the performance of a web application using Angular, resulting in improved page load speed.</li>
+        <li>Proactively worked with back-end engineers on understanding data flow and integration elements to generate a secure web design.</li>
+        <li>Utilized SEO best practices and techniques to optimize web applications for maximum speed and scalability and improve website performance.</li>
+        <li>Researched and recommended new technologies and tools, leading to the adoption of React for a new web application.</li>
+      </ul>
+    </section>
 
-    <h2>Full Stack Developer</h2>
-    <div class="complex">
-      <div>S3 Corp</div>
-      <div>2022 - current</div>
-    </div>
+    <section>
+      <h1>EDUCATION</h1>
 
-    <ul>
-      <li>Developed and maintained a scalable microservices architecture that improved the overall speed and
-        reliability of the web application by 25%.
-      </li>
-      <li>Developed and implemented a new Golang API, resulting in a 25% reduction in response time and a 15% increase
-        in overall system performance.</li>
-      <li>Implemented secure authentication and authorization solutions, ensuring the protection of sensitive customer
-        data and reducing the risk of security breaches by 40%.
-      </li>
-      <li style="margin-top: 0;">Wrote unit and integration tests for a Golang application, improving overall code
-        quality by 25% and
-        reducing the number of bugs by 30%.</li>
-      <li>Participated in code reviews of other engineers’ work and ensured that all code adheres to the company’s
-        coding standards & guidelines.</li>
-      <li>Developed and maintained RESTful APIs, enabling seamless communication between web applications and
-        third-party services, resulting in a 30% increase in efficiency.</li>
-      <li>Developed and maintained user interfaces using React.js, resulting in a 30% reduction in development time
-        for new projects.</li>
-      <li>Created self-contained, reusable, and testable modules and components, resulting in a 30% reduction in
-        development time and a 15% increase in team productivity.</li>
-      <li>Utilized Redux for state management, resulting in a 25% reduction in code complexity and a 15% increase in
-        team productivity.</li>
-      <li>Utilized effective debugging tools to indentify areas of performance issues, resulting in improvement of
-        client-side scripts by 25%.</li>
-      <li>Collaborated with product managers and designers to create a comprehensive user interface style guide,
-        resulting in a 30% reduction in development time for new features and components.</li>
-    </ul>
-    </div>
+      <div class="complex">
+        <h2>University of Economics Ho Chi Minh City</h2>
+        <div>2016 - 2020</div>
+      </div>
 
-    <h2>Frontend Developer</h2>
-    <div class="complex">
-      <div>Ban Vien</div>
-      <div>2021 - 2022</div>
-    </div>
+      <div>Finance Student.</div>
+    </section>
 
-    <ul>
-      <li>Developed complex user interfaces with HTML, CSS, JavaScript, React, and Angular and ensured a user-friendly
-        experience.</li>
-      <li>Reduced repeat work by establishing a coding style and its implementation, resulting in an 10% increase in
-        developer performance.</li>
-      <li>Optimized the performance of a web application using Angular, resulting in a 30% increase in page load times
-        and a 20% decrease in bounce rates.</li>
-      <li>Proactively worked with back-end engineers on understanding data flow and integration elements to generate a
-        secure web design.</li>
-      <li>Utilized SEO best practices and techniques to optimize web applications for maximum speed and scalability and
-        improve website performance by 20%.</li>
-      <li>Researched and recommended new technologies and tools, leading to the adoption of React for a new web
-        application, resulting in a 25% increase in user engagement and a 20% decrease in bounce rate.</li>
-      <li>Facilitated integration of third-party services and APIs to add new functionalities, increasing user
-        interaction by 25%.</li>
-    </ul>
-    </div>
-  </section>
-
-  <section>
-    <h1>EDUCATION</h1>
-
-    <div class="complex">
-      <h2>University of Economics Ho Chi Minh City</h2>
-      <div>2016 - 2020</div>
-    </div>
-
-    <div>Finance Student.</div>
-  </section>
-
-  <footer>
-    <div>Le Hong Phuc,</div>
-    <a href="tel:0835527319">0835 527 319,</a>
-    <a href="mailto:leschultz98@outlook.com.vn">leschultz98@outlook.com.vn</a>
-  </footer>
-</body>
-
+    <footer>
+      <div>Le Hong Phuc,</div>
+      <a href="tel:0835527319">0835 527 319,</a>
+      <a href="mailto:leschultz98@outlook.com.vn">leschultz98@outlook.com.vn</a>
+    </footer>
+  </body>
 </html>
