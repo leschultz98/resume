@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&family=Raleway:wght@700&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #312c30;
+  text-decoration: none !important;
+}
+
+body {
+  padding: 0 2.5rem;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.75;
+  color: #312c30;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.info {
+  flex: 1;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid gray;
+}
+
+.name {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  letter-spacing: 4px;
+}
+
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 4px;
+}
+
+img {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+}
+
+section {
+  margin-top: 1.25rem;
+}
+
+h1 {
+  margin-bottom: 0.75rem;
+  padding-left: 1rem;
+  background-color: #e0e0e0;
+  font-size: 1.25rem;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 4px;
+}
+
+.profile {
+  display: flex;
+  gap: 1rem;
+}
+
+.summary {
+  flex: 1;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.125rem;
+}
+
+h2:not(:first-of-type) {
+  margin-top: 0.75rem;
+}
+
+.complex {
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1;
+  font-size: 1.125rem;
+}
+
+.complex > :not(:first-child) {
+  font-size: 1rem;
+}
+
+ul {
+  padding-inline-start: 25px;
+}
+
+footer {
+  position: fixed;
+  right: 2.5rem;
+  bottom: 0;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1rem !important;
+}
+
+footer > * {
+  color: #7b7d7d;
+}
+
+footer > :first-child {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
