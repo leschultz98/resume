@@ -114,21 +114,3 @@ h2:not(:first-of-type) {
 ul {
   padding-inline-start: 25px;
 }
-
-footer {
-  position: fixed;
-  right: 2.5rem;
-  bottom: 0;
-  display: flex;
-  gap: 0.5rem;
-  font-size: 1rem !important;
-}
-
-footer > * {
-  color: #7b7d7d;
-}
-
-footer > :first-child {
-  font-weight: bold;
-  letter-spacing: 1px;
-}
